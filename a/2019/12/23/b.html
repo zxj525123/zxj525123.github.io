@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>personblog</title>
+	<meta charset="utf-8">
+	 <link href="/public/wenzhangye.css" rel="stylesheet">
+</head>
+<body>
+	<!-- 头部 -->
+	 <div id="header">
+	 	<div id="center">
+	 		<div id="DHTMLBOOK">
+               <span class="page" onmousedown="return false;" ondblclick="TPL();" onclick="TPL();"><img class="img"></span>
+               <span class="page right" onmousedown="return false;" ondblclick="TPR();" onclick="TPR();"><img class="img" style="left: -100%"></span>
+               <span class="page turn" onmousedown="return false;" ondblclick="TPL();" onclick="TPL();"><img class="img" style="filter: alpha(); opacity: 1"></span>
+               <span class="page turn right" onmousedown="return false;" ondblclick="TPR();" onclick="TPR();"><img class="img" style="filter: alpha(); left: -100%; opacity: 1"></span>
+             <div id="TXTBOX"></div>
+           </div>
+	 	</div>
+
+        <div id="imgsrc" style="visibility: hidden">
+            <img alt="1" src="/public/images/tu13.jpg">
+            <img alt="2" src="/public/images/tu33.png">
+            <img alt="3" src="/public/images/tu10.jpg">
+        </div> 
+	 <!-- 导航栏开始 -->
+        <div id="nav">
+            <div id="nav_ul">
+                <ul id="navli">
+                    <li class="nav_li"><a href="/index.html" class="aaa">Home</a></li>
+                    <li class="nav_li"><a href="/wenzhangye.html" class='aaa1'>About</a></li>
+                   
+                </ul>
+            </div>
+        </div><!-- 导航栏结束 -->
+    </div>
+
+    <!-- 文章内容开始 -->
+
+        <div id="main">
+        	<div class="gif"></div>
+        	<div class="gif2"></div>
+        	<div class="biaoti"><h2 class="biaoti_1">Book a house of gold~</h2></div>
+            <div class="gif3"><img src="/public/images/gif5.gif"></div>
+            <div class="gif4"><img src="/public/images/gif8.gif"></div>
+        	<div id="content_tu">
+        		<div class="biankuang">
+        		<div class="content_zi">
+              <h3 id="习惯">习惯</h3>
+<p>培根曾说过：“习惯真是一种顽强而巨大的力量，它可以主宰人生。”是的，从来没有谁一出生就有着异于常人的能力，也没有谁是莫名其妙就成功的，而成功的秘诀恰恰在于平时生活中的一点一滴，就在于平时生活中养成的习惯。
+   <!--more--></p>
+
+<p>习惯的形成是有意识选择的结果，既然是有意识选择的结果，那我们也可以再通过有意识的选择，来改掉它。所以你有自由选择好的或者坏的习惯的权力。
+ 勤于思考
+ 有的人在一个地方摔倒以后，以后即使遇到相同的情况还是会摔倒；而有的人就会在看到别人摔倒以后引以为戒，思考他为什么会摔倒以及怎么避免摔倒，这就是成功者和常人之间的差距。这也就是为什么有的人在成功的道路上很少犯错，看似没有付出太多努力就取得成功，那是因为他的思考让他避免了犯错；而有的人则磕磕绊绊，看似努力，却懒于思考，最终只能远远的看着别人取得成功。
+善于合作
+   正所谓单丝不成线，独木不成林。一个人的力量是十分有限的，即使聪慧如诸葛，也难以凭一己之力划分三国；即使勇猛如吕布，也抵不过刘关张的协同战斗。从来没有谁单枪匹马取得天下，也没有谁单打独斗获得成功。我们活在一个人与人的社会的中，必须学会合作才能更好的生存下去。
+宽容忍让
+   世界上最宽阔的东西是海洋，比海洋更宽阔的是人的胸怀，成功者的胸怀比大海还要宽广。宽容别人就是善待自己，宽容别人，就可以让自己从负面情绪中走出来，就有了更多的时间去奋斗；斤斤计较只会让自己陷入牛角尖之中，越想越苦闷，忧郁终日，难成大事。</p>
+
+          </div>
+          </div>
+        	</div>
+        </div>
+        <!-- 文章内容结束 -->
+       
+       <!-- 底部开始 -->
+     <div id="foot">
+      <div id="foot_nav">
+                <ul id="footli">
+                    <li class="foot_li"><a href="#" class="aaa2">home</a></li>
+                    <li class="foot_li"><a href="#" class='aaa3'>about</a></li>
+                    <li class="foot_li"><a href="#" class='aaa4'>ZHost@2019</a></li>
+                     <li class="foot_li"><a href="#" class='aaa5'>Blog</a></li> 
+                  </ul>
+        </div>
+    </div>
+    <!-- 底部结束 -->
+
+
+<!-- 翻页js -->
+ <script>
+	document.onselectstart = function() {
+    return false;
+}
+
+var nI = 0;
+var kI = 0;
+var run = false;
+
+function setOpacity(obj, o) {
+    if (o < 0) o = 0;
+    else if (o > 100) o = 100;
+    if (obj.filters) obj.filters.alpha.opacity = o;
+    else obj.style.opacity = o / 100;
+}
+
+function TPR__(p) {
+    P1.style.left = 50 - (2.5 * p) + "%";
+    P1.style.width = (2.5 * p) + "%";
+    setOpacity(P1i, .5 * p * p);
+    if (p == 20) run = false;
+}
+
+function TPR_(p) {
+    P2.style.width = 50 - (2.5 * p) + "%";
+    setOpacity(P2i, 100 - .5 * (p * p));
+    if (p == 20) {
+        P2i.src = IMGSRC[kI].src;
+        setOpacity(P2i, 100);
+        P2.style.width = "50%";
+        for (var i = 1; i <= 20; i++) setTimeout("TPR__(" + i + ")", i * 32);
+    }
+}
+
+function TPR() {
+    if (!run) {
+        run = true;
+        P01i.src = IMGSRC[kI].src;
+        P1.style.width = 0;
+        kI++;
+        if (kI >= nI) kI = 0;
+        titLe(kI);
+        P02i.src = IMGSRC[kI].src;
+        P1i.src = IMGSRC[kI].src;
+        for (var i = 1; i <= 20; i++) setTimeout("TPR_(" + i + ")", i * 32);
+    } else setTimeout("TPR()", 100);
+}
+
+function TPL__(p) {
+    P2.style.width = (2.5 * p) + "%";
+    setOpacity(P2i, .5 * p * p);
+    if (p == 20) run = false;
+}
+
+function TPL_(p) {
+    P1.style.left = (2.5 * p) + "%";
+    P1.style.width = 40 + (10 - 2.5 * p) + "%";
+    setOpacity(P1i, 100 - .5 * (p * p));
+    if (p == 20) {
+        P1i.src = IMGSRC[kI].src;
+        setOpacity(P1i, 100);
+        P1.style.left = 0;
+        P1.style.width = "50%";
+        for (var i = 1; i <= 20; i++) setTimeout("TPL__(" + i + ")", i * 32);
+    }
+}
+
+function TPL() {
+    if (!run) {
+        run = true;
+        P02i.src = IMGSRC[kI].src;
+        P2.style.width = 0;
+        kI--;
+        if (kI < 0) kI = nI - 1;
+        titLe(kI);
+        P01i.src = IMGSRC[kI].src;
+        P2i.src = IMGSRC[kI].src;
+        for (var i = 1; i <= 20; i++) setTimeout("TPL_(" + i + ")", i * 32);
+    } else setTimeout("TPL()", 100);
+}
+
+function titLe(p) {
+    document.getElementById("TXTBOX").innerHTML = IMGSRC[p].alt;
+}
+onload = function() {
+    IMGSRC = document.getElementById("imgsrc").getElementsByTagName("img");
+    DB = document.getElementById("DHTMLBOOK");
+    P01 = DB.getElementsByTagName("span")[0];
+    P01i = P01.getElementsByTagName("img")[0];
+    P02 = DB.getElementsByTagName("span")[1];
+    P02i = P02.getElementsByTagName("img")[0];
+    P1 = DB.getElementsByTagName("span")[2];
+    P1i = P1.getElementsByTagName("img")[0];
+    P2 = DB.getElementsByTagName("span")[3];
+    P2i = P2.getElementsByTagName("img")[0];
+    nI = IMGSRC.length;
+    P1i.src = IMGSRC[kI].src;
+    P2i.src = IMGSRC[kI].src;
+    titLe(kI);
+    DB.style.visibility = "visible";
+}
+</script>
+</body>
+</html>

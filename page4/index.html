@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>personblog</title>
+	<meta charset="utf-8">
+	<!-- <script type="text/javascript" src="jquery-1.11.3.js"></script>
+   <link href="bootstrap.min.css" rel="stylesheet">
+   <script type="text/javascript" src="bootstrap.min.js"></script> -->
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <link href="/public/index.css" rel="stylesheet">
+</head>
+<body>
+	<!-- 头部 -->
+	 <div id="header">
+    <img src="/public/images/gif4.gif">
+    <div id="center">
+      <img src="/public/images/30.jpg">
+    </div>
+
+	 <!-- 导航栏开始 -->
+        <div id="nav">
+            <div id="nav_ul">
+                <ul id="navli">
+                    <li class="nav_li"><a href="/index.html" class="aaa">Home</a></li>
+                    <li class="nav_li"><a href="/wenzhangye.html" class='aaa1'>About</a></li>
+                   
+                </ul>
+            </div>
+        </div><!-- 导航栏结束 -->
+      </div>  
+      <!-- 内容部分开始 -->
+      <div id="main">
+      	<!-- 第一部分图文开始 -->
+      	<div id="content1">
+      		<div id="lunbotu">
+      			  <img src="/public/images/tu33.png" id="tup">
+            <div class="btn">
+                <div class="btn-left" onclick="prev()"></div>
+                <div class="btn-right" onclick="next()"></div>
+            </div>
+
+            <div class="dot">
+                <div class="dot-item action" onclick="showDot(0)"></div>
+                <div class="dot-item" onclick="showDot(1)"></div>
+                <div class="dot-item" onclick="showDot(2)"></div>
+           </div>           
+      	</div>
+        <!-- 轮播图结束 -->
+
+
+      		<!-- <div class="right_wenzi"><h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspUsing the Ghost </h3> 总想在一场如酥如丝的春雨中，撑着油纸伞穿梭于江南。可能没有布满青苔的大石板，没有杨柳拂堤的断桥，没有一个且行且谈笑的好友。就一个人，静静的起行。在那里，我可以遇到破土而出、正展现着它勃勃生机的小草，遇到拂身而来、吹面不寒的二月春风<br><br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/wenzhangye">more</a></div>      		
+      	</div> -->
+      	<!-- 第一部分图文结束 -->
+
+      	<!-- 第二部分图文开始 -->
+               
+        <div class="right_wenzi"><h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </h3><h3 id="努力的意义">努力的意义</h3>
+<p>有句话这么说：“努力”是这个世界上最虚伪的东西之一，是成功者的借口、是失败者的安慰，然而不幸的是，努力又是必须的，是即使明知会血本无归也不得不付出的投资。</p>
+<br><br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/c/2019/12/28/g.html">more</a></div>       
+        
+
+  </div>
+ <div id="conten2">
+  
+  
+  
+<div id="content_1">
+          <div class="tup_1"><img src="/public/images/tu10.jpg">
+          </div>
+          <div class=" down_wenzi1"><h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3><h3 id="细雨中的丁香花">细雨中的丁香花</h3>
+<p>窗外，雨在悄悄地织着一幅如烟似水的薄纱，将天地都笼了进去，一丝轻风掠过，几缕雨线偏离了它原来的轨道，飘过纱窗，洒在我的发际，唇过，哦，清清的，凉凉的，仿佛还带着一点若有若无的苦涩。</p>
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/b/2019/12/27/f.html">more</a>
+          </div>
+        </div>
+        
+        
+
+<div id="content_2">
+          <div class="tup_1"><img src="/public/images/tu12.jpg">
+          </div>
+          <div class=" down_wenzi1"><h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3><h3 id="雨">雨</h3>
+<p>雨，应该是一个阴性名词，她，而不是他。雨，完完全全是女性化的。春三月的雨，是少女，正值豆蔻年华。
+　　她文静、温柔、清新、羞涩。于人不觉间，她轻轻悄悄地走来，“随风潜入夜，润物细无声”。</p>
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/b/2019/12/26/e.html">more</a>
+          </div>
+        </div>
+        
+        
+
+<div id="content_3">
+          <div class="tup_1"><img src="/public/images/tu13.jpg">
+          </div>
+          <div class=" down_wenzi1"><h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3><h3 id="人生的意义">人生的意义</h3>
+<p>人生，就是这样，需要时常带着一颗善良的心，去对待生命的际遇，不断追逐温暖的阳光，赠人玫瑰，手留余香，带着梦想，勇敢地追逐温暖的阳光，努力做一个自己喜欢的人。</p>
+
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/a/2019/12/25/d.html">more</a>
+          </div>
+        </div>
+        
+        
+
+</div>
+
+  
+  <div id="content3">
+    
+    
+        <div id="content_4">
+          <div class="tup_4"><img src="/public/images/tu14.jpg"></div>
+
+          <div class=" down_wenzi4"><h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3> <h3 id="做最好的自己">做最好的自己</h3>
+
+<p>面向太阳吧，不问春暖花开，</p>
+
+<p>只求快乐面对，</p>
+
+<p>因为，透过洒满阳光的玻璃窗，</p>
+
+<p>蓦然回首，你何尝不是别人眼中的风景？</p>
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/a/2019/12/24/c.html">more</a>
+          </div>
+        </div>
+       
+        <div id="content_4">
+          <div class="tup_4"><img src="/public/images/tu18.jpg"></div>
+
+          <div class=" down_wenzi4"><h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3> <h3 id="习惯">习惯</h3>
+<p>培根曾说过：“习惯真是一种顽强而巨大的力量，它可以主宰人生。”是的，从来没有谁一出生就有着异于常人的能力，也没有谁是莫名其妙就成功的，而成功的秘诀恰恰在于平时生活中的一点一滴，就在于平时生活中养成的习惯。</p>
+
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/a/2019/12/23/b.html">more</a>
+          </div>
+        </div>
+        
+      </div>
+
+
+       
+        <div id="content_6">
+          <div class="tup_6"><img src="/public/images/23.jpg"></div>
+
+          <div class=" down_wenzi6"><h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3> <h3 id="5g智能时代">5G智能时代</h3>
+<p>随着国内三大电信运营商纷纷开始着手实施5G升级，更快更优质的5G网络即将在两到三年后取代4G信号，成为手机移动网络的主流。5G相对于4G来说，更多的是继承和发展的关系。 
+  <!--more--> 
+  5G将同时考虑移动互联网和物联网的需求，具体包括移动宽带、低速率大连接物联网业务以及低时延、高可靠业务等应用场景。在峰值速率、用户体验等这方面来说，5G相对于4G是一个继承的关系。</p>
+<br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/b/2019/12/22/a.html">more</a>
+          </div>
+        </div>
+        
+   
+
+      <!-- <div id="conten2"> -->
+       
+      	<!-- <div id="content_1">
+      		<div class="tup_1"><img src="/public/images/tu14.jpg">
+          </div>
+
+      		<div class=" down_wenzi1"><h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspUsing the Ghost</h3>培根曾说过：“习惯真是一种顽强而巨大的力量，它可以主宰人生。”是的，从来没有谁一出生就有着异于常人的能力，也没有谁是莫名其妙就成功的，而成功的秘诀恰恰在于平时生活中的一点一滴，就在于平时生活中养成的习惯。<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/wenzhangye">more</a>
+          </div>
+      	</div>
+
+      	<div id="content_2">
+      		<div class="tup_2"><img src="/public/images/tu13.jpg"></div>
+
+      		<div class=" down_wenzi2"><h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp看别人的世界，品自己的人生</h3>面向太阳吧，不问春暖花开，只求快乐面对，因为，透过洒满阳光的玻璃窗，蓦然回首，你何尝不是别人眼中的风景。<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/wenzhangye">more</a>
+          </div>
+      	</div>
+
+      	<div id="content_3">
+      		<div class="tup_3"><img src="/public/images/tu10.jpg"></div>
+
+      		<div class=" down_wenzi3"><h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspUsing the Ghost</h3> 做自己，就像一片旋舞的叶子，让自己在炫舞当中找到自己；做自己，就像一朵小花，在开花中展现自己；做自己，就像一根小草，在默默无闻中展示自己的坚强；做自己，就像一片云朵，在漂浮中让自己变得更洒脱。<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/wenzhangye">more</a>
+          </div>
+      	</div> -->
+      <!-- </div> -->
+      	<!-- 第二部分图文结束 -->
+
+      	<!-- 第三部分图文开始 -->
+      	<!-- <div id="content3">
+      	<div id="content_4">
+      		<div class="tup_4"><img src="/public/images/tu12.jpg"></div>
+
+      		<div class=" down_wenzi4"><h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspUsing the Ghost</h3> 雨，应该是一个阴性名词，她，而不是他。雨，完完全全是女性化的。春三月的雨，是少女，正值豆蔻年华。她文静、温柔、清新、羞涩。于人不觉间，她轻轻悄悄地走来，“随风潜入夜，润物细无声”。<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/wenzhangye">more</a>
+          </div>
+      	</div>
+
+      	<div id="content_5">
+      		<div class="tup_5"><img src="/public/images/tu10.jpg"></div>
+
+      		<div class=" down_wenzi5"><h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp细雨中的丁香花</h3> 窗外，雨在悄悄地织着一幅如烟似水的薄纱，将天地都笼了进去，一丝轻风掠过，几缕雨线偏离了它原来的，仿佛还带着一点若有若无的苦涩。<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/wenzhangye">more</a>
+          </div>
+      	</div>
+      	</div> -->
+      	<!-- 第三部分图文结束 -->
+
+      	<!-- 第四部分图文开始 -->
+      <!-- 	<div id="content_6">
+      		<div class="tup_6"><img src="/public/images/tu15.jpg"></div>
+
+      		<div class=" down_wenzi6"><h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp5G时代的人工智能，感受真正的万物智联</h3>近几年，我们移动通信的发展进入了万物互联的时代，海量数据为人工智能的研究和应用提供了很好的数据支撑和基础。如果我们把5G和人工智能这两个技术结合在一起。<br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/wenzhangye">more</a>
+          </div>
+      	</div> -->
+
+      </div>
+      <!-- 内容部分结束 -->
+
+      <!-- 右边框栏 -->
+      <div id="right1">
+        <div class="up">
+          <div class="toux">
+            <img src="/public/images/tx1.jpg">
+          </div>
+          <div class="zi">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBlog_name:Zhost<br>&nbspWelcome to Zhost
+       Hey! Welcome to Zhost, it’s great to have you!
+     <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+        </div>
+
+        <div class="down"><!-- &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspHey! Welcome to Zhost, it’s great to have you!There are many surprises here! --><img src="/public/images/19.jpg"></div>
+      </div>
+
+      <div id="right2">
+        <!-- <img src="images/gif1.gif"> -->
+      </div>
+
+
+
+
+      <!-- 滚动图开始 -->
+      <div class="box">
+        
+        <div class="div1">
+            <span id="left">&lt;</span> <span id="right"></span>
+            <div class="a"></div>
+            <div class="b"></div>
+            <div class="c"></div>
+            <div class="d"></div>
+            <div class="e"></div>
+            <div class="f"></div>
+            <div class="g"></div>
+        </div>
+    </div>
+
+    <!-- 底部开始 -->
+    <div id="foot">
+      <div id="foot_nav">
+                <ul id="footli">
+                    <li class="foot_li"><a href="#" class="aaa2">home</a></li>
+                    <li class="foot_li"><a href="#" class='aaa3'>about</a></li>
+                    <li class="foot_li"><a href="#" class='aaa4'>ZHost@2019</a></li>
+                     <li class="foot_li"><a href="#" class='aaa5'>Blog</a></li> 
+                  </ul>
+        </div>
+    </div>
+     
+<!-- 轮播图开始 -->
+  <script>
+start();
+  var imgs = [
+      '/public/images/tu33.png',
+      '/public/images/22.jpg',
+      '/public/images/25.jpg'
+
+  ];
+  // document.getElementsByClassName('tup')
+  //当前是哪一张图片
+  var imgIndex = 0;
+
+  var timer;
+
+  //切换图片
+  function show(){
+
+    tup.src = imgs[imgIndex];
+  }
+
+  function showDot()
+        {
+            var _dots = document.getElementsByClassName('dot-item');
+
+            for (var i = 0; i < _dots.length; i++) {
+                _dots[i].classList.remove('active');
+            }
+
+
+            _dots[imgIndex].classList.add('active');
+            console.dir(imgIndex);
+        }
+
+        
+        function showDot1(Num)
+        {
+            var _dots = document.getElementsByClassName('dot-item');
+
+            for (var i = 0; i < _dots.length; i++) {
+                _dots[i].classList.remove('active');
+            }
+
+            
+             
+            imgIndex=Num;
+
+            _dots[Num].classList.add('active');
+            show();
+
+        }
+            
+         var div = document.getElementsByClassName('dot-item');
+         for(var i=0;i<div.length;i++){
+            div[i].index=i;
+        }
+          for(var i=0;i<div.length;i++){
+              div[i].onclick=function(){
+                showDot1(parseInt( this.index));
+              }
+        }
+               
+
+        function start()
+        {
+            timer = setInterval(function(){
+                show();
+                
+                showDot();
+                imgIndex++;
+
+                if (imgIndex > imgs.length - 1) {
+                    imgIndex = 0;
+                }
+
+            }, 1500);
+        }
+
+
+        function next()
+        {
+            imgIndex++;
+
+            if (imgIndex > imgs.length - 1) {
+                imgIndex = 0;
+            }
+
+            show();
+
+            showDot();
+        }
+
+        function prev()
+        {
+            imgIndex--;
+
+
+            if (imgIndex < 0) {
+                imgIndex = imgs.length - 1;
+            }
+
+            show();
+
+            showDot();
+        }
+
+
+        lunbotu.onmouseenter = function() {
+            clearInterval(timer);
+        }
+
+        lunbotu.onmouseleave = function() {
+
+            imgIndex--;
+
+            if (imgIndex < 0) {
+                imgIndex = imgs.length - 1;
+            }
+
+            start();
+        }
+        // 轮播图结束
+
+        // 滚动图
+     $(function(){
+            var box=$(".div1 div");
+            var div1=$(".div1");
+            var timer=null;
+            for(var i=0;i<box.length;i++)box.eq(i).attr("index",0);
+            box.eq(0).attr("se",0);//a
+            box.eq(1).attr("se",6);//b
+            box.eq(2).attr("se",5);//c
+            box.eq(3).attr("se",1);//d
+            box.eq(4).attr("se",2);//e
+            box.eq(5).attr("se",3);//f
+            box.eq(6).attr("se",4);//g
+            var a=[
+                {x:"-300px",z:"-400px",opa:0.5},
+                {x:"300px",z:"-400px",opa:0.5},
+                {x:"200px",z:"-300px",opa:0.7},
+                {x:"100px",z:"-200px",opa:0.9},
+                {x:"0px",z:"0px",opa:1},
+                {x:"-100px",z:"-200px",opa:0.9},
+                {x:"-200px",z:"-300px",opa:0.7}
+            ] 
+            var arr =cre(a,box);
+            arr.unshift(a);
+            timer=Ttime(box,arr);
+            div1.mouseover(function(){
+                clearInterval(timer);
+                $(".div1 span").show();
+            });
+            div1.mouseout(function(){
+               timer=Ttime(box,arr);
+               $(".div1 span").hide();
+            })
+            $("#left").click(function(){
+                s(box.eq(0),arr[0]);
+                s(box.eq(1),arr[1]);
+                s(box.eq(2),arr[2]);
+                s(box.eq(3),arr[3]);
+                s(box.eq(4),arr[4]);
+                s(box.eq(5),arr[5]);
+                s(box.eq(6),arr[6]);
+            })
+            $("#right").click(function(){
+                for(var i=0;i<box.length;i++){
+                    var index=parseInt(box.eq(i).attr("index"))-2;
+                    if(index<0){
+                        index+=7;
+                    }
+                    box.eq(i).attr("index",index);
+                    
+                }
+                s(box.eq(0),arr[0]);
+                s(box.eq(1),arr[1]);
+                s(box.eq(2),arr[2]);
+                s(box.eq(3),arr[3]);
+                s(box.eq(4),arr[4]);
+                s(box.eq(5),arr[5]);
+                s(box.eq(6),arr[6]);
+            });
+            
+            
+        });
+        function obj(arr){
+            var obj={};
+            obj.transform="translateX("+arr.x+")"+"translateZ("+arr.z+")";
+            obj.opacity=arr.opa;
+            return obj;
+        }
+        function s(obj1,arr){
+            var index=parseInt(obj1.attr("index"));
+            obj1.attr("index",++index);
+            if(parseInt(obj1.attr("index"))==7){
+                    obj1.attr("index",0);
+                    obj1.css(obj(arr[parseInt(obj1.attr("index"))]));
+                }
+                else{
+                    obj1.css(obj(arr[parseInt(obj1.attr("index"))]));
+                }
+        }
+        function Ttime(box,arr){
+            var timer=setInterval(function(){
+                s(box.eq(0),arr[0]);
+                s(box.eq(1),arr[1]);
+                s(box.eq(2),arr[2]);
+                s(box.eq(3),arr[3]);
+                s(box.eq(4),arr[4]);
+                s(box.eq(5),arr[5]);
+                s(box.eq(6),arr[6]);
+            },1000);
+
+            return timer;
+        }
+        function cre(arr,ele){
+            //为每个元素生成一套css
+            var arr_c=[]
+            for(var i=1;i<ele.length;i++){
+                var arr2=[];
+                var index=parseInt(ele.eq(i).attr("se"));
+                for(var j=0;j<arr.length;j++){
+                    arr2.push(arr[index%7]);
+                    
+                    index++;
+                }
+                arr_c.push(arr2);
+            }
+            return arr_c;
+        }
+
+</script>
+</body>
+</html>

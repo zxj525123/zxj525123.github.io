@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>personblog</title>
+	<meta charset="utf-8">
+	 <link href="/public/wenzhangye.css" rel="stylesheet">
+</head>
+<body>
+	<!-- 头部 -->
+	 <div id="header">
+	 	<div id="center">
+	 		<div id="DHTMLBOOK">
+               <span class="page" onmousedown="return false;" ondblclick="TPL();" onclick="TPL();"><img class="img"></span>
+               <span class="page right" onmousedown="return false;" ondblclick="TPR();" onclick="TPR();"><img class="img" style="left: -100%"></span>
+               <span class="page turn" onmousedown="return false;" ondblclick="TPL();" onclick="TPL();"><img class="img" style="filter: alpha(); opacity: 1"></span>
+               <span class="page turn right" onmousedown="return false;" ondblclick="TPR();" onclick="TPR();"><img class="img" style="filter: alpha(); left: -100%; opacity: 1"></span>
+             <div id="TXTBOX"></div>
+           </div>
+	 	</div>
+
+        <div id="imgsrc" style="visibility: hidden">
+            <img alt="1" src="/public/images/tu13.jpg">
+            <img alt="2" src="/public/images/tu33.png">
+            <img alt="3" src="/public/images/tu10.jpg">
+        </div> 
+	 <!-- 导航栏开始 -->
+        <div id="nav">
+            <div id="nav_ul">
+                <ul id="navli">
+                    <li class="nav_li"><a href="/index.html" class="aaa">Home</a></li>
+                    <li class="nav_li"><a href="/wenzhangye.html" class='aaa1'>About</a></li>
+                   
+                </ul>
+            </div>
+        </div><!-- 导航栏结束 -->
+    </div>
+
+    <!-- 文章内容开始 -->
+
+        <div id="main">
+        	<div class="gif"></div>
+        	<div class="gif2"></div>
+        	<div class="biaoti"><h2 class="biaoti_1">Book a house of gold~</h2></div>
+            <div class="gif3"><img src="/public/images/gif5.gif"></div>
+            <div class="gif4"><img src="/public/images/gif8.gif"></div>
+        	<div id="content_tu">
+        		<div class="biankuang">
+        		<div class="content_zi">
+              <h3 id="5g智能时代">5G智能时代</h3>
+<p>随着国内三大电信运营商纷纷开始着手实施5G升级，更快更优质的5G网络即将在两到三年后取代4G信号，成为手机移动网络的主流。5G相对于4G来说，更多的是继承和发展的关系。 
+  <!--more--> 
+  5G将同时考虑移动互联网和物联网的需求，具体包括移动宽带、低速率大连接物联网业务以及低时延、高可靠业务等应用场景。在峰值速率、用户体验等这方面来说，5G相对于4G是一个继承的关系。</p>
+
+<p>但光是继承还远远不够的，5G的作用在于能给我们带来更多惊喜，特别是在连接能力上，5G支持每平方公里100万连接，通过这个连接能力增强实现满足万物互联的连接需求，另外5G对各个科研实验场景也能进行增强，时延从10毫秒降低到1毫秒，可以满足无人驾驶、远程医疗等等的需求，因此可以说5G将开启万物互联时代。
+ 近几年，我们移动通信的发展进入了万物互联的时代，海量数据为人工智能的研究和应用提供了很好的数据支撑和基础。如果我们把5G和人工智能这两个技术结合在一起，可以用一句话展示未来的场景：无处不在的连接产生无处不在的智能应用。
+ 麦达数字作为一个多年从事电话机器人研发、推广、销售、服务的企业，一直在关注着人工智能领域的发展。如今，麦达电话机器人已经做到可以自动给客户打电话进行产品介绍，并根据客户提出的关键字进行快速解答，完全模拟真实人类声音，客户基本无法分辨是在与机器人沟通。通话结束后，AI可以根据电话内容判断此客户是否为有意向客户，并将有效客户分类汇总，以便人工后期跟进。可以说麦达电话机器人不仅省时省力，更能节省人工成本，提高工作效率。
+未来5G时代的到来，伴随着万物智联时代的开启，麦达电话机器人也将同步升级，实现更为先进的智能运营和智能客服系统。麦达数字也将伴随着万物智联时代开发更多服务社会的人工智能产品，为我们的工作生活创造便利。</p>
+
+          </div>
+          </div>
+        	</div>
+        </div>
+        <!-- 文章内容结束 -->
+       
+       <!-- 底部开始 -->
+     <div id="foot">
+      <div id="foot_nav">
+                <ul id="footli">
+                    <li class="foot_li"><a href="#" class="aaa2">home</a></li>
+                    <li class="foot_li"><a href="#" class='aaa3'>about</a></li>
+                    <li class="foot_li"><a href="#" class='aaa4'>ZHost@2019</a></li>
+                     <li class="foot_li"><a href="#" class='aaa5'>Blog</a></li> 
+                  </ul>
+        </div>
+    </div>
+    <!-- 底部结束 -->
+
+
+<!-- 翻页js -->
+ <script>
+	document.onselectstart = function() {
+    return false;
+}
+
+var nI = 0;
+var kI = 0;
+var run = false;
+
+function setOpacity(obj, o) {
+    if (o < 0) o = 0;
+    else if (o > 100) o = 100;
+    if (obj.filters) obj.filters.alpha.opacity = o;
+    else obj.style.opacity = o / 100;
+}
+
+function TPR__(p) {
+    P1.style.left = 50 - (2.5 * p) + "%";
+    P1.style.width = (2.5 * p) + "%";
+    setOpacity(P1i, .5 * p * p);
+    if (p == 20) run = false;
+}
+
+function TPR_(p) {
+    P2.style.width = 50 - (2.5 * p) + "%";
+    setOpacity(P2i, 100 - .5 * (p * p));
+    if (p == 20) {
+        P2i.src = IMGSRC[kI].src;
+        setOpacity(P2i, 100);
+        P2.style.width = "50%";
+        for (var i = 1; i <= 20; i++) setTimeout("TPR__(" + i + ")", i * 32);
+    }
+}
+
+function TPR() {
+    if (!run) {
+        run = true;
+        P01i.src = IMGSRC[kI].src;
+        P1.style.width = 0;
+        kI++;
+        if (kI >= nI) kI = 0;
+        titLe(kI);
+        P02i.src = IMGSRC[kI].src;
+        P1i.src = IMGSRC[kI].src;
+        for (var i = 1; i <= 20; i++) setTimeout("TPR_(" + i + ")", i * 32);
+    } else setTimeout("TPR()", 100);
+}
+
+function TPL__(p) {
+    P2.style.width = (2.5 * p) + "%";
+    setOpacity(P2i, .5 * p * p);
+    if (p == 20) run = false;
+}
+
+function TPL_(p) {
+    P1.style.left = (2.5 * p) + "%";
+    P1.style.width = 40 + (10 - 2.5 * p) + "%";
+    setOpacity(P1i, 100 - .5 * (p * p));
+    if (p == 20) {
+        P1i.src = IMGSRC[kI].src;
+        setOpacity(P1i, 100);
+        P1.style.left = 0;
+        P1.style.width = "50%";
+        for (var i = 1; i <= 20; i++) setTimeout("TPL__(" + i + ")", i * 32);
+    }
+}
+
+function TPL() {
+    if (!run) {
+        run = true;
+        P02i.src = IMGSRC[kI].src;
+        P2.style.width = 0;
+        kI--;
+        if (kI < 0) kI = nI - 1;
+        titLe(kI);
+        P01i.src = IMGSRC[kI].src;
+        P2i.src = IMGSRC[kI].src;
+        for (var i = 1; i <= 20; i++) setTimeout("TPL_(" + i + ")", i * 32);
+    } else setTimeout("TPL()", 100);
+}
+
+function titLe(p) {
+    document.getElementById("TXTBOX").innerHTML = IMGSRC[p].alt;
+}
+onload = function() {
+    IMGSRC = document.getElementById("imgsrc").getElementsByTagName("img");
+    DB = document.getElementById("DHTMLBOOK");
+    P01 = DB.getElementsByTagName("span")[0];
+    P01i = P01.getElementsByTagName("img")[0];
+    P02 = DB.getElementsByTagName("span")[1];
+    P02i = P02.getElementsByTagName("img")[0];
+    P1 = DB.getElementsByTagName("span")[2];
+    P1i = P1.getElementsByTagName("img")[0];
+    P2 = DB.getElementsByTagName("span")[3];
+    P2i = P2.getElementsByTagName("img")[0];
+    nI = IMGSRC.length;
+    P1i.src = IMGSRC[kI].src;
+    P2i.src = IMGSRC[kI].src;
+    titLe(kI);
+    DB.style.visibility = "visible";
+}
+</script>
+</body>
+</html>
